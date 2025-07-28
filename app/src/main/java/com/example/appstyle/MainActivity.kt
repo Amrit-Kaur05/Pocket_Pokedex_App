@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         rvPoke = findViewById<RecyclerView>(R.id.pokemon_list)
+
         pokeImgList = mutableListOf()
         pokeTitleList = mutableListOf()
         pokeDescList = mutableListOf()
@@ -47,6 +49,8 @@ class MainActivity : AppCompatActivity() {
         rvPoke.adapter = adapter
         layoutManager = LinearLayoutManager(this@MainActivity)
         rvPoke.layoutManager = LinearLayoutManager(this@MainActivity)
+        rvPoke.addItemDecoration(DividerItemDecoration(this@MainActivity, LinearLayoutManager.VERTICAL))
+
 
         updatePokemon()
 

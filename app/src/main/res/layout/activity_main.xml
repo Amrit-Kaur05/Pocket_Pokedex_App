@@ -11,7 +11,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pokemon_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="571dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -21,30 +21,30 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="707dp"
-        android:layout_height="287dp"
-        android:src="@drawable/pokewhite"
+        android:layout_width="740dp"
+        android:layout_height="190dp"
+        android:src="@drawable/pokegrey"
         app:layout_constraintBottom_toBottomOf="@+id/description"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/pokemon_list"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="329dp"
-        android:layout_height="88dp"
-        android:text="Pokemon Viewer!"
+        android:layout_height="60dp"
+        android:text="Pokedex!"
         android:textAlignment="center"
-        android:textColor="#a82028"
+        android:textColor="#f0f0f8"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/pokemon_list"
-        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/pokemon_list"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
 
     <TextView
         android:id="@+id/description"
@@ -52,12 +52,13 @@
         android:layout_height="38dp"
         android:layout_marginStart="184dp"
         android:layout_marginTop="16dp"
-        android:text="Scroll to view Pokemon!"
-        android:textColor="#c85048"
+        android:text="Scroll to view Pokemon and their abilities!"
+        android:textAlignment="center"
+        android:textColor="#f0f0f8"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0.0" />
