@@ -11,10 +11,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pokemon_list"
         android:layout_width="match_parent"
-        android:layout_height="571dp"
+        android:layout_height="557dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -29,13 +29,13 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="329dp"
-        android:layout_height="60dp"
-        android:text="Pokedex!"
+        android:layout_width="385dp"
+        android:layout_height="92dp"
+        android:text="Pocket Pokedex!"
         android:textAlignment="center"
         android:textColor="#f0f0f8"
         android:textSize="40sp"
