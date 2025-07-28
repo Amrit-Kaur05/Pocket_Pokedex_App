@@ -101,9 +101,9 @@ class MainActivity : AppCompatActivity() {
                     for (j in 0 until amountAbilities) {
                         Log.d("j", "pokemon count: $j")
                         allAbilities =
-                            allAbilities + "\n" + json.jsonObject.getJSONArray("abilities")
+                            allAbilities  + "● " +json.jsonObject.getJSONArray("abilities")
                                 .getJSONObject(j).getJSONObject("ability").getString("name")
-                                .replaceFirstChar { it.titlecase() }
+                                .replaceFirstChar { it.titlecase() } + "\n"
                     }
                     pokeDescList.add(allAbilities)
 

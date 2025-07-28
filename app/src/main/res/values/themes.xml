@@ -3,7 +3,16 @@
     <style name="Base.Theme.AppStyle" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/press_start_2p</item>
     </style>
 
     <style name="Theme.AppStyle" parent="Base.Theme.AppStyle" />
+
+    <style name="TextAppearance.SubText" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">1sp</item>
+        <item name="android:lineSpacingMultiplier">0.5</item>
+        <item name="android:fontFamily">@font/changa</item>
+    </style>
 </resources>
