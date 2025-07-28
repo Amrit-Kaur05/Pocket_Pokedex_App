@@ -5,14 +5,65 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f0f0f8"
+    android:background="#a8b8c8"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pokemon_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="707dp"
+        android:layout_height="287dp"
+        android:src="@drawable/pokewhite"
+        app:layout_constraintBottom_toBottomOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pokemon_list"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="329dp"
+        android:layout_height="88dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Pokemon Viewer!"
+        android:textAlignment="center"
+        android:textColor="#a82028"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pokemon_list"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pokemon_list"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Scroll to view Pokemon!"
+        android:textColor="#c85048"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <!--    <TextView-->
     <!--        android:id="@+id/title"-->

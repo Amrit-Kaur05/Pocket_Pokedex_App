@@ -1,22 +1,17 @@
 package com.example.appstyle
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
-import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler.JSON
 import okhttp3.Headers
 import kotlin.random.Random
+
 
 class MainActivity : AppCompatActivity() {
     // making lists to use in app
@@ -55,6 +50,17 @@ class MainActivity : AppCompatActivity() {
 
         updatePokemon()
 
+        // updating the recycler view if the last item is reached
+        rvPoke.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+
+                if (!recyclerView.canScrollVertically(1)) {
+                    updatePokemon()
+                }
+            }
+        })
+
     }
 
     private fun updatePokemon() {
@@ -91,14 +97,13 @@ class MainActivity : AppCompatActivity() {
 
                     // updating pokemon abilities and adding to list
                     var amountAbilities = json.jsonObject.getJSONArray("abilities").length()
-                    var allAbilities = "Abilities: \n"
+                    var allAbilities = ""
                     for (j in 0 until amountAbilities) {
                         Log.d("j", "pokemon count: $j")
                         allAbilities =
                             allAbilities + "\n" + json.jsonObject.getJSONArray("abilities")
                                 .getJSONObject(j).getJSONObject("ability").getString("name")
                                 .replaceFirstChar { it.titlecase() }
-
                     }
                     pokeDescList.add(allAbilities)
 
