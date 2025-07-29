@@ -41,8 +41,6 @@ GIF created with Imgur
 
 ## Notes
 
-Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
-
 I learned a lot about styling and customization while making this app, and I like how the UI turned out. I'm also happy with the infinite scroll effect, and I'm looking forward to exploring more APIs in the future!
 
 ## License
