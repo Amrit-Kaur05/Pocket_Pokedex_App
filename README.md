@@ -33,7 +33,7 @@ The following EXTRA features are implemented:
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='https://i.imgur.com/eI0fZMy.gif' title='Video Demo' width='200' alt='Video Demo' />
+<img src='https://i.imgur.com/eI0fZMy.gif' title='Video Demo' width='' alt='Video Demo' />
 
 Link: https://imgur.com/a/hiTPAih
 
